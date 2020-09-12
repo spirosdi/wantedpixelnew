@@ -1,5 +1,7 @@
 @import url(fontawesome-all.min.css);
-
+@font-face{font-family:bender;src:url("../../assets/webfonts/Bender.otf")}
+@font-face{font-family:benderlight;src:url("../../assets/webfonts/Bender Light.otf")}
+@font-face{font-family:benderbold;src:url("../../assets/webfonts/Bender Bold.otf")}
 /*
 	Hyperspace by HTML5 UP
 	html5up.net | @ajlkn
@@ -172,6 +174,7 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2em 0;
+		font-family: Titillium Web;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -216,10 +219,14 @@ input, select, textarea {
 
 	h2 {
 		font-size: 1.75em;
+		font-family: benderlight;
+		text-transform: uppercase;
+		letter-spacing: 2px;
 	}
 
 	h3 {
 		font-size: 1.1em;
+		font-family: 'bender';
 	}
 
 	h4 {
@@ -2301,6 +2308,7 @@ input, select, textarea {
 		margin: 0 0 0.7em 0;
 		display: block;
 		font-size: 1.1em;
+		font-family: 'bender';
 	}
 
 	input[type="text"],
@@ -2796,6 +2804,7 @@ input, select, textarea {
 		ul.contact > li {
 			padding: 0;
 			margin: 1.5em 0 0 0;
+			font-family: Titillium Web;
 		}
 
 			ul.contact > li:first-child {
@@ -3240,7 +3249,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #5e42a6;
+			background-color: #cdb30c;
 		}
 
 		.wrapper.style1-alt {
@@ -3524,7 +3533,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #312450;
+		background: #2b1e03;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3761,14 +3770,14 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:before {
-				background: #3c2c62;
+				background: #62760c;
 			}
 
 			#sidebar nav a:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -moz-linear-gradient(to right, #523906, #62760c);
+				background-image: -webkit-linear-gradient(to right, #523906, #62760c);
+				background-image: -ms-linear-gradient(to right, #523906, #62760c);
+				background-image: linear-gradient(to right, #523906, #62760c);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -3857,7 +3866,7 @@ input, select, textarea {
 
 						#sidebar nav a:after {
 							background-image: none;
-							background-color: #b74e91;
+							background-color: #cdb30c;
 						}
 
 		}
@@ -3879,6 +3888,12 @@ input, select, textarea {
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 	}
+		@media screen and (max-width: 420px) {
+			#intro #logo {
+				width: 200px;
+
+			}
+		}
 
 		#intro p {
 			font-size: 1.25em;
